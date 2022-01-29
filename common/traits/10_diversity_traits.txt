@@ -1,0 +1,802 @@
+# Humanoid
+trait_natural_storytellers = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { HUM }
+	opposites = { "trait_traditional" "trait_quarrelsome" }
+	modifier = {
+		planet_jobs_unity_produces_mult = 0.2
+	}
+}
+
+trait_adaptive_learners = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { HUM }
+	opposites = { "trait_quick_learners" "trait_quarrelsome" }
+	modifier = {
+		species_leader_exp_gain = 0.5
+	}
+}
+
+trait_creative_spark = {
+	cost = 1
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { HUM }
+	opposites = { "trait_intelligent" "trait_nerve_stapled" "trait_erudite" "trait_enigmatic_intelligence_poor" }
+	modifier = {
+		planet_jobs_engineering_research_produces_mult = 0.05
+		planet_jobs_physics_research_produces_mult = 0.05
+		planet_jobs_society_research_produces_mult = 0.05
+	}
+}
+
+trait_electrical_masters = {
+	cost = 4
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { HUM }
+	opposites = { "trait_ingenious" }
+	modifier = {
+		planet_jobs_energy_produces_mult = 0.30
+	}
+	slave_cost = {
+		energy = 50
+	}
+}
+
+trait_willful_architects = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { HUM }
+	modifier = {
+		pop_housing_usage_mult = -0.05
+		pop_environment_tolerance = 0.05
+	}
+}
+
+trait_depressive = {
+	cost = -1
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { HUM }
+	opposites = { "trait_hive_mind" "trait_nerve_stapled" }
+	modifier = {
+		pop_happiness = -0.05
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+trait_free_thinkers = {
+	cost = -2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { HUM }
+	opposites = { "trait_conformists" "trait_deviants" "trait_hive_mind" "trait_machine_unit" }
+	modifier = {
+		pop_government_ethic_attraction = -0.30
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Mammalian
+trait_herd_instinct = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { MAM }
+	opposites = { "trait_communal" "trait_solitary" }
+	modifier = {
+		pop_housing_usage_mult = -0.2
+	}
+}
+
+trait_simple_pleasures = {
+	cost = 1
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { MAM }
+	modifier = {
+		pop_happiness = 0.05
+	}
+}
+
+trait_terrifying_presence = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { MAM }
+	modifier = {
+		army_morale_damage_mult = 0.15
+	}
+}
+
+trait_pack_animals = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { MAM }
+	modifier = {
+		planet_jobs_worker_produces_mult = 0.1
+	}
+	slave_cost = {
+		energy = 50
+	}
+}
+
+trait_natural_armaments = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { MAM }
+	modifier = {
+		army_damage_mult = 0.30
+	}
+}
+
+trait_territorial = {
+	cost = -2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { MAM }
+	opposites = { "trait_nomadic" "trait_sedentary" }
+	modifier = {
+		pop_growth_from_immigration = -0.3
+		pop_resettlement_cost_mult = 0.5
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+trait_mammoth_diet = {
+	cost = -2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { MAM }
+	modifier = {
+		planet_pops_organics_food_upkeep_mult = 0.20
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#Reptilian
+trait_keen_predators = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { REP }
+	custom_tooltip = TRAIT_KEEN_PREDATORS_EFFECT
+}
+
+trait_oviparous = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { REP }
+	modifier = {
+		pop_growth_speed = 0.10
+		pop_environment_tolerance = 0.05
+	}
+}
+
+trait_sharp_scales = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { REP }
+	modifier = {
+		army_damage_mult = 0.25
+		army_defense_damage_mult = 0.25
+	}
+}
+
+trait_chameleonic = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { REP }
+	modifier = {
+		species_leader_exp_gain = 0.15
+		leader_skill_levels = 1
+	}
+}
+
+trait_slow_metabolisms = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0	
+	opposites = { "trait_conservational" "trait_wasteful" "trait_hive_mind" }
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { REP }
+	modifier = {
+		planet_pops_organics_food_upkeep_mult = -0.20
+	}
+}
+
+trait_cold_blooded = {
+	cost = -2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { REP }
+	modifier = {
+		planet_jobs_ruler_produces_mult = -0.05
+		planet_jobs_specialist_produces_mult = -0.05
+		planet_jobs_worker_produces_mult = -0.05
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+trait_violent_tendencies = {
+	cost = -1
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { REP }
+	custom_tooltip = TRAIT_VIOLENT_TENDENCIES_EFFECT
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Avian
+trait_migratory = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { AVI }
+	opposites = { "trait_nomadic" "trait_sedentary" }
+	modifier = {
+		pop_growth_from_immigration = 0.30
+		pop_resettlement_cost_mult = -0.50
+	}
+}
+
+trait_birds_of_a_feather = {
+	cost = 1
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { AVI }
+	opposites = { "trait_conformists" "trait_deviants" "trait_hive_mind" "trait_machine_unit" }
+	modifier = {
+		pop_government_ethic_attraction =  0.15
+	}
+}
+
+trait_natural_aeronautics = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { AVI }
+	opposites = { "trait_natural_engineers" "trait_natural_physicists" "trait_natural_sociologists" "trait_nerve_stapled" }
+	modifier = {
+		planet_jobs_engineering_research_produces_mult = 0.3
+	}
+}
+
+trait_flocking_patterns = {
+	cost = 1
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { AVI }
+	opposites = { "trait_unruly" "trait_docile" }
+	modifier = {
+		species_empire_size_mult = -0.05
+	}
+}
+
+trait_canopy_born = {
+	cost = 1
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { AVI }
+	opposites = { "trait_ingenious" }
+	modifier = {
+		planet_jobs_energy_produces_mult = 0.075
+	}
+	slave_cost = {
+		energy = 50
+	}
+}
+
+trait_hollow_bones = {
+	cost = -1
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { AVI }
+	opposites = { "trait_resilient" }
+	modifier = {
+		army_defense_damage_mult = -0.25
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+trait_magpie_instinct = {
+	cost = -2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { AVI }
+	opposites = { "trait_conservational" "trait_wasteful" "trait_hive_mind" }
+	modifier = {
+		planet_pops_consumer_goods_upkeep_mult = 0.20
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Anthropoid
+trait_caste_system = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { ART }
+	modifier = {
+		planet_jobs_specialist_produces_mult = 0.1
+	}
+}
+
+trait_stingers = {
+	cost = 1
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { ART }
+	modifier = {
+		army_damage_mult = 0.15
+	}
+}
+
+trait_deep_digging = {
+	cost = 3
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { ART }
+	opposites = { "trait_communal" "trait_solitary" "trait_unruly" "trait_docile" }
+	modifier = {
+		pop_housing_usage_mult = -0.1
+		species_empire_size_mult = -0.05
+	}
+}
+
+trait_repressed_emotions = {
+	cost = 4
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { ART }
+	opposites = { "trait_decadent" }
+	forced_happiness = yes
+	custom_tooltip = TRAIT_REPRESSED_EMOTIONS_EFFECT
+}
+
+trait_radioactive_evolution = {
+	cost = 1
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { ART }
+	modifier = {
+		pc_nuked_habitability = 0.15
+	}
+}
+
+trait_rapid_digestion = {
+	cost = -1
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { ART }
+	modifier = {
+		planet_pops_organics_food_upkeep_mult = 0.10
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+trait_fragile_organs = {
+	cost = -2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { ART }
+	opposites = { "trait_venerable" "trait_enduring" "trait_fleeting" "trait_fleeting_lithoid" }
+	modifier = {
+		leader_age = -10
+		army_health = -0.15
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Mollcusoid
+trait_hard_shells = {
+	cost = 1
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { MOL }
+	modifier = {
+		army_health = 0.25
+	}
+}
+
+trait_pearls = {
+	cost = 4
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { MOL }
+	opposites = { "trait_hive_mind" "trait_thrifty" }
+	custom_tooltip = TRAIT_PEARLS_EFFECT
+	modifier = {
+		army_health = 0.15		
+	}
+}
+
+trait_poison_spines = {
+	cost = 3
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { MOL }
+	modifier = {
+		army_damage_mult = 0.45
+	}
+}
+
+trait_flowing_environment = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { MOL }
+	opposites = { "trait_natural_engineers" "trait_natural_physicists" "trait_natural_sociologists" "trait_nerve_stapled" }
+	modifier = {
+		planet_jobs_physics_research_produces_mult = 0.3
+	}
+}
+
+trait_tight_communities = {
+	cost = 4
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { MOL }
+	opposites = { "trait_docile" "trait_unruly" }
+	modifier = {
+		species_empire_size_mult = -0.20
+	}
+}
+
+trait_delicate_constitution = {
+	cost = -4
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { MOL }
+	opposites = { "trait_extremely_adaptive" "trait_nonadaptive" "trait_adaptive" "trait_robust" "trait_adaptive_lithoid" }
+	modifier = {
+		pop_environment_tolerance = -0.20
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+trait_lax_reactions = {
+	cost = -2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { MOL }
+	opposites = { "trait_ingenious" }
+	modifier = {
+		planet_jobs_energy_produces_mult = -0.15
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Fungoid
+trait_hyphae_spread = {
+	cost = 3
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { FUN }
+	opposites = { "trait_venerable" "trait_enduring" "trait_fleeting" "trait_fleeting_lithoid" }
+	modifier = {
+		leader_age = 50
+	}
+}
+
+trait_crevice_preference = {
+	cost = 3
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { FUN }
+	modifier = {
+		pc_relic_habitability = 0.2
+	}
+}
+
+trait_systemic_dependence = {
+	cost = 4
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { FUN }
+	opposites = { "trait_wasteful" "trait_hive_mind" "trait_conservational" }
+	modifier = {
+		planet_pops_consumer_goods_upkeep_mult = -0.40
+	}
+}
+
+trait_eaters_of_decay = {
+	cost = 1
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { FUN }
+	modifier = {
+		planet_pops_organics_food_upkeep_mult = -0.10
+	}
+}
+
+trait_pyschoactive_spores = {
+	cost = 3
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { FUN }
+	opposites = { "trait_natural_engineers" "trait_natural_physicists" "trait_natural_sociologists" "trait_nerve_stapled" }
+	modifier = {
+		planet_jobs_society_research_produces_mult = 0.25
+		army_morale_damage_mult = 0.1
+	}
+}
+
+trait_delicate_spores = {
+	cost = -4
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { FUN }
+	opposites = { "trait_rapid_breeders" "trait_slow_breeders" "trait_fertile" "trait_rapid_breeders_lithoid" }
+	modifier = {
+		pop_growth_speed = -0.20
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+trait_parasitic_growth = {
+	cost = -2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { FUN }
+	opposites = { "trait_agrarian" }
+	modifier = {
+		planet_jobs_food_produces_mult = -0.15
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Plantoid
+trait_photosynthesis = {
+	cost = 3
+	potential_crossbreeding_chance = 1.0
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { PLANT }
+	modifier = {
+		planet_jobs_food_produces_mult = 0.1
+		planet_jobs_energy_produces_mult = 0.1
+	}
+	slave_cost = {
+		energy = 50
+	}
+}
+
+trait_cross_pollinators = {
+	cost = 4
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { PLANT }
+	opposites = { "trait_rapid_breeders" "trait_slow_breeders" "trait_fertile" "trait_rapid_breeders_lithoid" }
+	modifier = {
+		pop_growth_speed = 0.2
+	}
+}
+
+trait_soil_knowledge = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { PLANT }
+	custom_tooltip = TRAIT_SOIL_KNOWLEDGE_EFFECT
+	modifier = {
+		planet_jobs_food_produces_mult = 0.05
+	}
+	slave_cost = {
+		energy = 50
+	}
+}
+
+trait_deep_rooted = {
+	cost = 1
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { PLANT }
+	custom_tooltip = TRAIT_DEEP_ROOTED_EFFECT
+}
+
+trait_edibility = {
+	cost = 1
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { PLANT }
+	opposites = { "trait_delicious" }
+	modifier = {
+		planet_livestock_food_produces_add = 1		
+	}
+	slave_cost = {
+		energy = 50
+	}
+}
+
+trait_wild_growth = {
+	cost = -2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { PLANT }
+	opposites = { "trait_communal" "trait_solitary" }
+	modifier = {
+		pop_housing_usage_mult = 0.2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+trait_oaken_perpestive = {
+	cost = -2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { PLANT }
+	opposites = { "trait_slow_learners" "trait_quick_learners" "trait_enigmatic_intelligence" "trait_adaptive_learners" }
+	modifier = {
+		species_leader_exp_gain = -0.5
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Lithoid
+trait_adamantine = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { LITHOID }
+	opposites = { "trait_resilient" }
+	modifier = {
+		army_defense_damage_mult = 1
+	}
+}
+
+trait_dowsing_sense = {
+	cost = 4
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { LITHOID }
+	opposites = { "trait_industrious" }
+	modifier = {
+		planet_jobs_minerals_produces_mult = 0.30
+	}
+	slave_cost = {
+		energy = 50
+	}
+}
+
+trait_stone_headed = {
+	cost = -2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { LITHOID }
+	opposites = { "trait_traditional" "trait_quarrelsome" }
+	modifier = {
+		planet_jobs_unity_produces_mult = -0.2
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+trait_stone_hearted = {
+	cost = -2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { LITHOID }
+	opposites = { "trait_decadent" "trait_hive_mind" }
+	modifier = {
+		pop_cat_worker_happiness = -0.1
+		pop_cat_slave_happiness = -0.1
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Necroid
+trait_natural_mummification = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { NECROID }
+	modifier = {
+		planet_pops_organics_food_upkeep_mult = -0.1
+		planet_pops_consumer_goods_upkeep_mult = -0.1
+	}
+}
+
+trait_ancestral_communion = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { NECROID }
+	modifier = {
+		planet_jobs_ruler_produces_mult = 0.2
+	}
+}
+
+trait_mortality_broken_shackle = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { NECROID }
+	modifier = {
+		pop_happiness = 0.1
+	}
+}
+
+trait_shroud_born = {
+	cost = 4
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { NECROID }
+	custom_tooltip = TRAIT_SHOURD_BORN_EFFECT
+}
+
+trait_eager_for_death = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { NECROID }
+	modifier = {
+		army_defense_morale_mult = 0.15
+	}
+}
+
+trait_rotted = {
+	cost = -1
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { NECROID }
+	opposites = { "trait_delicious" }
+	modifier = {
+		planet_livestock_food_produces_add = -0.5	
+	}
+	slave_cost = {
+		energy = -50
+	}
+}
+
+trait_bloodthirst = {
+	cost = -2
+	potential_crossbreeding_chance = 1.0	
+	allowed_archetypes = { BIOLOGICAL }
+	species_class = { NECROID }
+	modifier = {
+		army_defense_morale_mult = -0.05
+		army_defense_damage_mult = -0.05
+		army_defense_health_mult = -0.05
+	}
+}
